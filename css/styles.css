@@ -255,3 +255,154 @@ body {
   font-size: 28px;
   font-weight: lighter;
 }
+
+/* Image Banner */
+.image-banner {
+  width: 1510px;
+  height: 850px;
+}
+
+.image-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-us {
+  position: relative;
+  width: 100%;
+  height: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1b3936;
+  margin-top: -250px;
+}
+.about-us .image-container {
+  position: absolute;
+  overflow: hidden;
+}
+
+.about-us .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-us .image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+.about-us img {
+  position: absolute;
+  object-fit: cover;
+}
+
+.gradient1 {
+  top: 160px;
+  left: 40px;
+  width: 400px;
+  height: 300px;
+  background-image: linear-gradient(to right, #ffffffdb 0%, #1b3936 100%);
+  position: absolute;
+  opacity: 0.5;
+}
+.gradient1 img {
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.gradient2 {
+  top: 40px;
+  right: 40px;
+  width: 401px;
+  height: 526px;
+  background-image: linear-gradient(to top left, #ecfffd 0%, #1b3936 100%);
+  position: absolute;
+  opacity: 0.5;
+}
+.gradient2 img {
+  top: 0px;
+  right: 0px;
+  width: 401px;
+  height: 526px;
+  object-fit: cover;
+  display: block;
+}
+.gradient3 {
+  bottom: 100px;
+  left: 140px;
+  width: 401px;
+  height: 531px;
+  background-image: linear-gradient(to top left, #ecfffd 0%, #1b3936 100%);
+  position: absolute;
+  opacity: 0.5;
+}
+
+.gradient3 img {
+  bottom: 0px;
+  left: 0px;
+  width: 401px;
+  height: 526px;
+  object-fit: cover;
+  display: block;
+}
+.gradient4 {
+  bottom: 40px;
+  right: 100px;
+  width: 401px;
+  height: 531px;
+  background-image: linear-gradient(to border-top, #ecfffd 0%, #1b3936 100%);
+  position: absolute;
+  opacity: 0.5;
+}
+
+.gradient4 img {
+  bottom: 0px;
+  right: 0px;
+  width: 401px;
+  height: 531px;
+  object-fit: cover;
+  display: block;
+}
+
+.content {
+  max-width: 1083px;
+  z-index: 1;
+  font-size: 68px;
+  color: #ffffff;
+  line-height: 100px;
+  margin-top: -200px;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-family: "Boska";
+  text-align: center;
+}
+.content h2 {
+  font-size: 24px;
+  color: #75ff69;
+  margin-bottom: -80px;
+}
+.content font {
+  color: #678784;
+}
+.about-us-bottom {
+  width: 1510px;
+  height: 300px;
+  margin-top: -150px;
+}
+.about-us-bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
