@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
+/* Font-face declarations for other fonts */
+@font-face {
+  font-family: "Boska";
+  src: url("../fonts/Boska/boska-regular.woff2") format("woff2"),
+    url("../fonts/Boska/boska-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Switzer";
+  src: url("../fonts/Switzer/switzer-regular.woff2") format("woff2"),
+    url("../fonts/Switzer/switzer-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/Avenir/avenir-regular.woff2") format("woff2"),
+    url("../fonts/Avenir/avenir-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1b3936;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  color: white;
+  padding: 10px 0;
+  display: flex 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 1214px;
+  height: 33px;
+  margin-left: 150px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 20px;
+  text-align: center;
+  flex-grow: 1;
+  color: #75ff69;
+  font-family: "Oranienbaum", poppins;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18 px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  margin-top: -300px;
+}
+
+.hero-title1 {
+  font-family: "Boska", serif;
+  font-size: 262px;
+  font-weight: lighter;
+  color: #ffffff;
+  margin-bottom: -15px;
+}
+.hero-title2 {
+  font-family: "Boska", serif;
+  font-size: 262px;
+  font-weight: lighter;
+  color: #75ff69;
+  font-style: italic;
+  margin-left: 423px;
+  margin-top: -100px;
+}
+.hero-title3 {
+  font-family: "Boska", serif;
+  font-size: 32px;
+  font-weight: lighter;
+  color: #ffffff;
+  margin-top: -280px;
+}
+.hero-title4 {
+  font-family: "Boska", serif;
+  font-size: 262px;
+  font-weight: lighter;
+  color: #ffffff;
+  margin-top: -100px;
+}
+
+.hero-text {
+  font-family: "switzer", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: -300px;
+  margin-left: 450px;
+  width: 570px;
+  height: 72px;
+  text-align: justify;
+}
+
+/* Background Circle */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 570px;
+  height: 570px;
+  background-image: url("../images/image.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Circle Border */
+.circle-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1188px;
+  height: 1188px;
+  border: 2px dashed #75ff69;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.play-icon {
+  position: absolute;
+  top: 400px;
+  left: 1315px;
+  width: 82px;
+  height: 82px;
+  background-color: #75ff69;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.play-icon::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid black;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
