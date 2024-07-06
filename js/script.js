@@ -24,3 +24,28 @@ document
   });
 
 updateCards();
+document.addEventListener("DOMContentLoaded", function () {
+  const prevButton = document.getElementById("testimonial-prev");
+  const nextButton = document.getElementById("testimonial-next");
+  const testimonialSlider = document.querySelector(".testimonial-slider");
+  const testimonials = document.querySelectorAll(".testimonial-card");
+  let currentIndex = 0;
+
+  function updateSlider() {
+    const translateX =
+      -currentIndex * (testimonialSlider.clientWidth / testimonials.length);
+    testimonialSlider.style.transform = `translateX(${translateX}px)`;
+  }
+
+  prevButton.addEventListener("click", function () {
+    currentIndex =
+      currentIndex > 0 ? currentIndex - 1 : testimonials.length - 1;
+    updateSlider();
+  });
+
+  nextButton.addEventListener("click", function () {
+    currentIndex =
+      currentIndex < testimonials.length - 1 ? currentIndex + 1 : 0;
+    updateSlider();
+  });
+});
