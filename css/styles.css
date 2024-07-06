@@ -46,7 +46,7 @@ body {
   padding: 0 20px;
   width: 1214px;
   height: 33px;
-  margin-left: 150px;
+  margin-left: 350px;
 }
 
 .nav-left,
@@ -118,7 +118,7 @@ body {
   font-size: 18px;
   color: #ffffff;
   margin-top: -300px;
-  margin-left: 450px;
+  margin-left: 650px;
   width: 570px;
   height: 72px;
   text-align: justify;
@@ -132,10 +132,9 @@ body {
   left: 50%;
   width: 570px;
   height: 570px;
-  background-image: url("../images/image.png");
+  background-image: url("../images/Image.png");
   background-size: cover;
   background-position: center;
-  border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: 0;
 }
@@ -147,15 +146,14 @@ body {
   left: 50%;
   width: 1188px;
   height: 1188px;
-  border: 2px dashed #75ff69;
-  border-radius: 50%;
+  background-image: url("../images/Line.png");
   transform: translate(-50%, -50%);
-  z-index: 0;
+  rotate: var(-50%);
 }
 .play-icon {
   position: absolute;
-  top: 400px;
-  left: 1315px;
+  top: 350px;
+  left: 1500px;
   width: 82px;
   height: 82px;
   background-color: #75ff69;
@@ -193,7 +191,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin-left: 200px;
+  margin-left: 20%;
 }
 
 .info-left {
@@ -205,33 +203,23 @@ body {
 .logo-circle {
   width: 203px;
   height: 230px;
-  background-color: #75ff69;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-left: 105px;
-}
-
-.logo-letter {
-  font-size: 120px;
-  font-family: "Boska";
-  color: #1b3936;
-  font-style: italic;
-  position: absolute;
-  bottom: 0px;
+  margin-left: 155px;
 }
 
 .logo-description {
-  margin-top: 20px;
+  margin-top: 60px;
   width: 609px;
   height: 128px;
   font-family: "Switzer", sans-serif;
   font-size: 20px;
   color: #1b3936;
   text-align: left;
-  margin-left: 105px;
+  margin-left: 160px;
   line-height: 31px;
 }
 .container {
@@ -258,7 +246,7 @@ body {
 
 /* Image Banner */
 .image-banner {
-  width: 1510px;
+  width: 100%;
   height: 850px;
 }
 
@@ -277,7 +265,7 @@ body {
   align-items: center;
   text-align: center;
   background-color: #1b3936;
-  margin-top: -250px;
+  margin-top: 200px;
 }
 .about-us .image-container {
   position: absolute;
@@ -289,87 +277,61 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.about-us .image-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
 .about-us img {
   position: absolute;
   object-fit: cover;
 }
 
-.gradient1 {
+.top-left {
   top: 160px;
-  left: 40px;
+  left: 180px;
   width: 400px;
   height: 300px;
-  background-image: linear-gradient(to right, #ffffffdb 0%, #1b3936 100%);
   position: absolute;
-  opacity: 0.5;
 }
-.gradient1 img {
-  top: 0;
-  left: 0;
+.top-left img {
   width: 400px;
   height: 300px;
   object-fit: cover;
   display: block;
 }
 
-.gradient2 {
-  top: 40px;
-  right: 40px;
+.top-right {
+  top: 10px;
+  right: 200px;
   width: 401px;
   height: 526px;
-  background-image: linear-gradient(to top left, #ecfffd 0%, #1b3936 100%);
   position: absolute;
-  opacity: 0.5;
 }
-.gradient2 img {
-  top: 0px;
-  right: 0px;
+.top-right img {
   width: 401px;
   height: 526px;
   object-fit: cover;
   display: block;
 }
-.gradient3 {
+.bottom-left {
+  bottom: 150px;
+  left: 240px;
+  width: 401px;
+  height: 531px;
+  position: absolute;
+}
+
+.bottom-left img {
+  width: 401px;
+  height: 526px;
+  object-fit: cover;
+  display: block;
+}
+.bottom-right {
   bottom: 100px;
-  left: 140px;
+  right: 200px;
   width: 401px;
   height: 531px;
-  background-image: linear-gradient(to top left, #ecfffd 0%, #1b3936 100%);
   position: absolute;
-  opacity: 0.5;
 }
 
-.gradient3 img {
-  bottom: 0px;
-  left: 0px;
-  width: 401px;
-  height: 526px;
-  object-fit: cover;
-  display: block;
-}
-.gradient4 {
-  bottom: 40px;
-  right: 100px;
-  width: 401px;
-  height: 531px;
-  background-image: linear-gradient(to border-top, #ecfffd 0%, #1b3936 100%);
-  position: absolute;
-  opacity: 0.5;
-}
-
-.gradient4 img {
-  bottom: 0px;
-  right: 0px;
+.bottom-right img {
   width: 401px;
   height: 531px;
   object-fit: cover;
@@ -377,12 +339,12 @@ body {
 }
 
 .content {
-  max-width: 1083px;
+  width: 1083px;
   z-index: 1;
   font-size: 68px;
   color: #ffffff;
-  line-height: 100px;
-  margin-top: -200px;
+  line-height: 80px;
+  margin-top: -350px;
   text-transform: capitalize;
   font-weight: 400;
   font-family: "Boska";
@@ -397,12 +359,12 @@ body {
   color: #678784;
 }
 .about-us-bottom {
-  width: 1510px;
-  height: 300px;
-  margin-top: -150px;
+  width: 100%;
+  height: 500px;
+  margin-top: -250px;
 }
 .about-us-bottom img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 500px;
   object-fit: cover;
 }
