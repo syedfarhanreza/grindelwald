@@ -46,7 +46,7 @@ body {
   padding: 0 20px;
   width: 1214px;
   height: 33px;
-  margin-left: 350px;
+  margin-left: 150px;
 }
 
 .nav-left,
@@ -118,7 +118,7 @@ body {
   font-size: 18px;
   color: #ffffff;
   margin-top: -300px;
-  margin-left: 650px;
+  margin-left: 450px;
   width: 570px;
   height: 72px;
   text-align: justify;
@@ -153,7 +153,7 @@ body {
 .play-icon {
   position: absolute;
   top: 350px;
-  left: 1500px;
+  left: 1320px;
   width: 82px;
   height: 82px;
   background-color: #75ff69;
@@ -182,7 +182,7 @@ body {
   padding: 50px 20px;
   position: relative;
   background-color: #f9f9f9;
-  color: black;
+  color: #1b3936;
 }
 
 .info-right {
@@ -367,4 +367,207 @@ body {
   width: auto;
   height: 500px;
   object-fit: cover;
+}
+.hidden {
+  display: none;
+}
+.slider-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  margin-top: -100px;
+}
+.slider-title {
+  font-size: 60px;
+  text-transform: capitalize;
+  font-family: "Boska";
+  color: #1b3936;
+  margin-bottom: 20px;
+  text-align: left;
+  width: 784px;
+  height: 176px;
+  margin-bottom: 50px;
+  margin-left: -300px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  width: 378px;
+  height: 505px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  position: relative;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+#card-1 {
+  background-image: url("../images/ImageCard3.png");
+}
+
+#card-2 {
+  background-image: url("../images/ImageCard1.png");
+}
+
+#card-3 {
+  background-image: url("../images/ImageCard2.png");
+}
+
+.card.active {
+  width: 582px;
+  height: 778px;
+}
+
+.card-title {
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin-left: -150px;
+  font-weight: lighter;
+  font-family: "Boska";
+}
+.card-title-active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-title-inactive {
+  font-size: 30px;
+  font-weight: lighter;
+  font-family: "Boska";
+  margin-bottom: 20px;
+}
+
+.card-button-active {
+  position: absolute;
+  bottom: 90px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card-button {
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card-button img,
+.card-button-active img {
+  width: 42px;
+  height: 47px;
+}
+.card-description {
+  width: 351px;
+  height: 48px;
+  font-size: 16px;
+  margin-left: -20px;
+  text-align: left;
+  margin-top: -5px;
+}
+
+.card:not(.active) .card-button {
+  display: none;
+}
+.signup-section {
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.signup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/BG.png");
+  width: 1194px;
+  height: 704px;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.signup-title {
+  font-size: 60px;
+  font-family: "Boska", serif;
+  width: 603px;
+  height: 176px;
+  text-align: center;
+  font-weight: 400;
+}
+.signup-title font {
+  color: #75ff69;
+}
+
+.signup-description {
+  font-size: 18px;
+  font-family: "Switzer", sans-serif;
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  margin-top: -50px;
+  font-weight: 400;
+}
+
+.signup-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 570px;
+  height: 60px;
+}
+
+.signup-input {
+  padding: 10px 20px;
+  font-size: 16px;
+  flex: 1;
+  border: none;
+}
+
+.signup-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #75ff69;
+  color: #1b3936;
+  cursor: pointer;
+  font-family: "Boska", serif;
+  border: none;
+  font-weight: 600;
+}
+
+.signup-button:hover {
+  background-color: #60cc56;
 }
