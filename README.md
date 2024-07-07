@@ -1,10 +1,13 @@
 # Grindelwald
 
-## live Link : https://benevolent-madeleine-4d5462.netlify.app/ 
+## live Link: https://benevolent-madeleine-4d5462.netlify.app/ 
 
 ## Overview
 
 The Grindelwald website project is designed to promote a cozy cabin retreat in the woods. It aims to provide visitors with a serene and inviting experience through a visually appealing and user-friendly interface. The website features information about the cabins, amenities, testimonials, and promotional offers.
+
+## Screenshots
+![grindelwald](https://github.com/syedfarhanreza/grindelwald/assets/95230278/de52706d-ed73-40a6-8f2d-1ecd7ce8c08b)
 
 ## Project Structure
 
